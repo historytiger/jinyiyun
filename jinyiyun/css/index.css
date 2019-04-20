@@ -1,0 +1,361 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: white;
+	background-color: #eee;
+}
+
+video {
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: fill;
+	z-index: 1;
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	height: auto;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.main {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+}
+
+.top {
+	width: 1100px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 300px;
+	float: left;
+	line-height: 30px;
+}
+
+.logo a {
+	color: white;
+	font-size: 25px;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+.logo p {
+	display: inline-block;
+	font-size: 20px;
+	border-left: 2px solid whitesmoke;
+	padding-left: 10px;
+	opacity: 0.7;
+}
+
+.menu {
+	width: 550px;
+	float: right;
+	padding-top: 5px;
+	position: relative;
+}
+
+.menu ul li {
+	width: 59px;
+	float: left;
+	list-style: none;
+	margin-right: 40px;
+}
+
+.menu ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.menu .list-item {
+	position: absolute;
+	bottom: -10px;
+	width: 50px;
+	height: 2px;
+	background-color: red;
+	margin-right: 0;
+}
+
+.middle {
+	width: 100%;
+	height: auto;
+	margin-top: 350px;
+	text-align: center;
+}
+
+.middle p {
+	font-size: 28px;
+	opacity: 0.7;
+}
+
+.middle span {
+	color: red;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 72px;
+	display: inline-block;
+	opacity: 0.8;
+}
+
+.end {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	display: block;
+}
+
+article {
+	width: 1100px;
+	height: auto;
+	margin: 0 auto;
+	color: black;
+}
+
+.works {
+	text-align: center;
+	font-size: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.works h1 {
+	font-family: "微软雅黑";
+	font-size: 30px;
+	margin: 0;
+	padding: 10px;
+	border-bottom: 1px solid darkgray;
+}
+
+.works p {
+	letter-spacing: 2px;
+	color: darkgray;
+}
+
+.achievements .works p {
+	color: #FFB5B5;
+}
+
+.achievements .works h1 {
+	border-bottom: 1px solid #FFB5B5;
+}
+
+.photo {
+	width: 100%;
+	height: 1000px;
+}
+
+.box {
+	margin-top: 10px;
+	float: left;
+	width: 366px;
+	height: auto;
+}
+
+.box img {
+	border-right: 1px solid #eee;
+}
+
+.box p {
+	margin-top: 5px;
+	padding: 0;
+	color: darkgray;
+}
+
+.box a {
+	text-decoration: none;
+	color: black;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+
+.box a:hover {
+	color: red;
+}
+
+.more {
+	line-height: 30px;
+	margin-bottom: 50px;
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+
+.more a {
+	font-size: 25px;
+	text-decoration: none;
+	color: darkgray;
+}
+
+.achievements {
+	width: 100%;
+	height: 500px;
+	color: black;
+	background-color: #ff4a4a;
+}
+
+.achievements-list h3 {
+	letter-spacing: 2px;
+	opacity: 0.7;
+}
+
+.shownumber {
+	padding: 0;
+	width: 1100px;
+	height: 132px;
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.achievements-list {
+	position: relative;
+	width: 250px;
+	float: left;
+	text-align: center;
+}
+
+.add {
+	position: absolute;
+	top: -15px;
+	left: 180px;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/加号.png);
+	opacity: 0.7;
+}
+
+.add2 {
+	position: absolute;
+	top: -15px;
+	left: 205px;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/加号.png);
+	opacity: 0.7;
+}
+
+.wedo {
+	width: 100%;
+	height: 500px;
+	color: black;
+	background-color: white;
+}
+
+.achievements-listth {
+	width: 183px;
+	float: left;
+	text-align: center;
+}
+
+.achievements-listth h3 {
+	color: darkgrey;
+	letter-spacing: 2px;
+}
+
+.parents {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	height: 700px;
+	color: black;
+	z-index: -1;
+}
+
+.team {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top: 0;
+	width: 100%;
+	height: auto;
+}
+
+.team .works h1 {
+	color: white;
+}
+
+.show-logo {
+	width: 1100px;
+	height: auto;
+	margin: 0 auto;
+}
+
+footer {
+	padding-top: 30px;
+	margin-top: 40px;
+	width: 100%;
+	height: 180px;
+	background-color: #000;
+}
+
+.footermain {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.footer1 {
+	float: left;
+	width: 120px;
+	height: 120px;
+}
+
+.footer2 {
+	float: left;
+	width: 600px;
+	height: 120px;
+	color: white;
+}
+
+.footer-menu {
+	width: 600px;
+	height: 50px;
+}
+
+.footer-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-menu ul li {
+	list-style: none;
+	float: left;
+	line-height: 35px;
+	border-bottom: 1px solid white;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+footer a:hover {
+	color: red;
+}
+
+.footer-text {
+	font-family: "楷体";
+	font-size: 24px;
+	float: left;
+}
+
+.footer3 {
+	float: right;
+	text-align: right;
+}
