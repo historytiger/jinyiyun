@@ -1,0 +1,426 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: white;
+	background-color: #eee;
+	font-family: "微软雅黑";
+}
+.content {
+	position: relative;
+	width: 100%;
+	height: auto;
+	z-index: 0;
+	overflow: hidden;
+}
+.main {
+	width: 100%;
+	height: 620px;
+	left: 0;
+	bottom: 0;
+	background: url(../img/anli.jpg) center top;
+
+}
+.top {
+	width: 1100px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 300px;
+	float: left;
+	line-height: 30px;
+}
+
+.logo a {
+	color: white;
+	font-size: 25px;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+.logo p {
+	display: inline-block;
+	font-size: 20px;
+	border-left: 2px solid whitesmoke;
+	padding-left: 10px;
+	opacity: 0.7;
+}
+
+.menu {
+	width: 550px;
+	float: right;
+	padding-top: 5px;
+	position: relative;
+}
+
+.menu ul li {
+	width: 60px;
+	float: left;
+	list-style: none;
+	margin-right: 36px;
+}
+
+.menu ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.menu .list-item {
+	display: list-item;
+	position: absolute;
+	bottom: -10px;
+	width: 50px;
+	height: 2px;
+	background-color: red;
+}
+
+.middle {
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.middle p {
+	font-size: 28px;
+	opacity: 0.7;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 72px;
+	display: inline-block;
+}
+article {
+	width: 1100px;
+	height: auto;
+	margin: 0 auto;
+	color: black;
+}
+
+.works {
+	text-align: center;
+	font-size: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.works h1 {
+	font-family: "微软雅黑";
+	font-size: 30px;
+	margin: 0;
+	padding: 10px;
+	border-bottom: 1px solid darkgray;
+}
+
+.works p {
+	letter-spacing: 2px;
+	color: darkgray;
+}
+.photo {
+	width: 100%;
+	height: 2000px;
+}
+.box {
+	top: 0;
+	position: relative;
+	margin-top: 10px;
+	float: left;
+	width: 366px;
+	height: auto;
+	overflow: hidden;
+}
+.box:hover{
+	top: -3px;
+	transition: top 0.3s;
+	box-shadow: 0 0 10px darkgray;
+}
+.box img {
+	border-right: 1px solid #eee;
+}
+
+.box p {
+	margin-top: 5px;
+	padding: 0;
+	color: darkgray;
+}
+
+.box a {
+	text-decoration: none;
+	color: black;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+
+.box a:hover {
+	color: red;
+}
+footer {
+	padding-top: 30px;
+	width: 100%;
+	height: 180px;
+	background-color: black;
+}
+
+.footermain {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.footer1 {
+	float: left;
+	width: 120px;
+	height: 120px;
+}
+
+.footer2 {
+	float: left;
+	width: 600px;
+	height: 120px;
+	color: white;
+}
+
+.footer-menu {
+	width: 600px;
+	height: 50px;
+}
+
+.footer-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-menu ul li {
+	list-style: none;
+	float: left;
+	line-height: 35px;
+	border-bottom: 1px solid white;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+footer a:hover {
+	color: red;
+}
+
+.footer-text {
+	font-family: "楷体";
+	font-size: 24px;
+	float: left;
+}
+
+.footer3 {
+	float: right;
+	text-align: right;
+}
+/*服务类css*/
+/*wedo*/
+.fuwu-wdo{
+	width: 100%;
+	height: 255px;
+}
+.fuwu-box{
+	margin-top: 10px;
+	float: left;
+	width: 366px;
+	height: 245px;
+	position: relative;
+	background-color: slateblue ; 
+	
+}
+.box-show{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	height: auto;
+	z-index: 1;
+}
+.imgbox{
+	width:100px ;
+	height: 100px;
+	margin:20px auto 10px auto;
+	border: 1px solid white;
+	border-radius: 50%;
+}
+.box-show img{
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+}
+.bigtext{
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	font-family: "微软雅黑";
+}
+.smalltext{
+	text-align: center;
+	font-size: 18px;
+	color:#eee;
+	font-family: "微软雅黑";
+}
+/* howdo*/
+.achievements-listth {
+	width: 183px;
+	float: left;
+	text-align: center;
+}
+.shownumber {
+	padding: 0;
+	width: 1100px;
+	height: 420px;
+	margin-top: 80px;
+	margin-bottom: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.achievements-listth h3 {
+	padding: 0;
+	color: black;
+	font-size: 25px;
+}
+.achievements-listth .jobshow{
+	text-align: center;
+}
+.achievements-listth .jobshow ul{
+	margin: 0;
+	padding: 0;
+}
+.achievements-listth .jobshow li{
+	margin-bottom:20px;
+	color: #666;
+	list-style: none;
+	font-family: "微软雅黑";
+}
+/*关于页面*/
+.ABOUT-US{
+	width: 100%;
+	height: 525px;
+}
+.introduction{
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 1px;
+	color: #666;
+}
+.evrionment{
+	height: auto;
+	margin-top: 50px;
+}
+.ev-pg{
+	float: left;
+	width: 274px;
+	height: 182px;
+	position: relative;
+	border-right: 1px solid #EEEEEE;
+	border-top: 1px solid #EEEEEE;
+}
+.togeter{
+	margin-top: 100px;
+	width: 100%;
+	height: 400px;
+}
+.job{
+	width: 347px;
+	height: 300px;
+	border: 1px solid #666;
+	text-align: center;
+	float: left;
+	background-color: #e6e6e6;
+}
+.job-box{
+	width: 70px;
+	height: 70px;
+	margin: -50px auto 0 auto;
+	background-color: #f04343;
+	border-radius: 5px;
+}
+.job-box img{
+	margin: 10px;
+}
+.job-txt h1{
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.bth-job a{
+	margin: 30px auto 0 auto;
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #f04343;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.CONTECT-US{
+	width: 100%;
+	height: 350px;
+   margin-top: 30px;
+}
+.left-txt{
+	float: left;
+	width: 50%;
+	height: 100%;
+ text-align: left;
+}
+.left-txt p{
+font-size: 20px;
+color: #999;
+}
+.left-txt b{
+	color: black;
+}
+.left-txt span{
+	font-size: 18px;
+	color: black;
+}
+.right-pg{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+.right-pg img{
+	height: 350px;
+}
+/* 腾讯地图中的css设置*/
+.map{
+	width: 100%;
+	height: 600px;
+	margin-bottom: 50px;
+}
+#allmap {
+	height: 600px;/*设置地图宽高*/
+    width:100%;
+    overflow: hidden;
+}
+.lastone{
+	margin: 0 auto;
+	width: 1100px;
+	border-top: 1px solid gainsboro;
+}
+.lastone p{
+	float: left;
+  color: black;
+  font-size: 15px;
+  line-height: 15px;
+}
+.lastone img{
+	float: right;
+	margin: 6px 20px 6px 0;
+}

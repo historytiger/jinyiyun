@@ -1,36 +1,37 @@
 window.onload = function() {
-
-	var one = document.getElementById("move"); //红色横杠
+    var one = document.getElementById("move"); //红色横杠
 	var getul = document.getElementById("get");
 	var geta = getul.getElementsByTagName("a"); //得到a
-	var timer = null;
+	var timer=null;
+	// alert(getli.length)
 	for(var i = 0; i < geta.length; i++) {
+		geta[i].index=i; //用来表示当前页数
 		geta[i].onmouseover = function() {
-			//alert(one.offsetLeft)
-			//alert(this.offsetLeft)
+			//alert(geta[i].offsetLeft);
 			//alert(this.offsetLeft)
 			var thisa = this;
 			clearInterval(timer);
+			//alert(this.offsetLeft)
 			timer = setInterval(function() {
 				if(one.offsetLeft == thisa.offsetLeft) {
-					clearIntervaimg / n0.pngl(timer);
+					clearInterval(timer);
 				} else if(one.offsetLeft < thisa.offsetLeft) {
-					one.style.left = one.offsetLeft + 9 + 'px';
+					//alert(one.offsetLeft)
+					one.style.left = one.offsetLeft + 8 + 'px';
 				} else {
-					one.style.left = one.offsetLeft - 9 + 'px';
+					one.style.left = one.offsetLeft - 8 + 'px';
 				}
-			}, 20 - Math.abs(((thisa.offsetLeft - one.offsetLeft) / 90)) * 3)
-
+			}, 18 - Math.abs(((thisa.offsetLeft - one.offsetLeft) / 96)) * 3);
 		}
 		div1.onmouseleave = function() {
 			clearInterval(timer);
 			timer = setInterval(function() {
-				if(one.offsetLeft == 40) {
+				if(one.offsetLeft == 40 ){
 					clearInterval(timer);
 				} else {
-					one.style.left = one.offsetLeft - 9 + 'px';
+					one.style.left = one.offsetLeft - 8 + 'px';
 				}
-			}, 20 - (one.offsetLeft - 40) / 90 * 3)
+			}, 18 - (one.offsetLeft - 40) / 96 * 3);
 		}
 	}
 	//顶部滚条动画结束
@@ -44,9 +45,10 @@ window.onload = function() {
 	}
 	//alert(mtest.offsetTop)距离文档最高处的距离
 	//alert(document.body.scrollTop)滚动条滚动的距离
+	//document.documentElement.scrollTop 谷歌兼容的去滚动条高度
 	look = setInterval(function() {
 		var array = [1, 9, 0, 8, 1, 0, 8, 0, 0, 9];
-		if(document.body.scrollTop > 1642) {
+		if(document.body.scrollTop > 1642 || document.documentElement.scrollTop>1642) {
 			//第一个数字
 			var move1 = setInterval(function() {
 				getimg[0].src = "img/n" + array[0] + ".png";
@@ -134,13 +136,30 @@ window.onload = function() {
 	}
 	//down点一下跳转
 	var down = document.getElementById('down');
-	down.onclick = function() {
+	down.onclick= function () {
 		var turndown = setInterval(function() {
-			document.body.scrollTop += 20;
-			if(document.body.scrollTop > 1100) {
+			if(document.body.scrollTop==0){
+				document.documentElement.scrollTop+=20;
+				if(document.documentElement.scrollTop > 1200){
+					clearInterval(turndown);
+				}
+			}else{
+				document.body.scrollTop += 20;
+				if(document.body.scrollTop > 1100) {
 				clearInterval(turndown);
 			}
+			}
+			//alert(document.documentElement.scrollTop);
+			
 		}, 10)
-
 	}
+	//cs3特效
+	var cs3=document.getElementById('cs3')
+		cs3.parentElement.onmouseover=function(){
+			cs3.className='textcs3';
+		}
+		cs3.parentElement.onmouseout=function(){
+			cs3.className='cs3';
+		}
+	
 }
